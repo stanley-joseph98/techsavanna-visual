@@ -1,0 +1,119 @@
+body{
+    font-family: Roboto, Arial;
+    margin-right: 0;
+    
+  }
+#logo {
+    float: left;
+    margin-right: -0.5cm;
+    position: fixed;
+}
+
+#home {
+    background-color: #1d0065;
+    margin-left: 6.35cm;
+    margin-right: 0;
+    margin-top: -1cm;
+    padding-top: 1cm;
+    padding-bottom: 2cm;
+    position: static;
+}
+
+.topdiv {
+    float: right;
+    padding-right: 1cm;
+}
+
+/* Navigation Bar Buttons */
+.topmenu {
+    color: lightgray;
+    background-color: #1d0065;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 1mm;
+    font-weight: bolder;
+}
+
+.donatemenu {
+    color: #1d0065;
+    background-color: orange;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 1mm;
+    font-weight: bolder;
+}
+
+.topmenu:hover {
+    color: white;
+    font-weight: bolder;
+    background-color: #149db0;
+    cursor: pointer;
+}
+
+.donatemenu:hover {
+    font-weight: bolder;
+    background-color: white;
+    cursor: pointer;
+}
+
+.data-pane{
+    background-color: lightgrey;
+    color: black;
+    font-weight: 10px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    top: 100px;
+    width: 250px;
+    display: flex;
+
+}
+.datapane-text{
+    text-align: center;
+    padding-top: 170px;
+    padding-left: 40px;
+    font-family: arial;
+    padding-right: 40px;
+}
+.viz-canva{
+    background-color:rgba(238, 238, 244, 0.947);
+    color: rgb(16, 16, 16);
+    font-weight: 10px;
+    position: fixed;
+    left: 250px;
+    bottom: 0px;
+    top: 100px;
+    width: 800px;
+    display: flex;
+}
+.canva-text{
+    text-align: center;
+    padding-top: 210px;
+    padding-left: 170px;
+    font-family: arial;
+}
+
+.chart-area{
+    background-color: lightgrey;
+    color: white;
+    font-weight: 10px;
+    position: fixed;
+    right: 0px;
+    left: 1050px;
+    bottom: 0px;
+    top: 100px;
+    display: flex;
+}
+.chartarea-text{
+    text-align: center;
+    padding-top: 0px;
+    font-family: arial;
+    color: black;
+    
+}
+
+
