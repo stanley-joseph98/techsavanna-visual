@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+</head>
+<body style="padding-bottom: 1000px;">
+    <div style="
+      display: flex;
+      flex-direction: row;
+      ">
+      <div style="background-color: lightblue;">div2</div>
+      <div style="background-color: lightpink;">div1</div>
+    </div>
+
+    <!-- When you add text, the box becomes flexible and adjusts to the length -->
+    <div style="
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    ">
+    <div style="background-color: lightblue;">div2, a flexbox</div>
+    <div style="background-color: lightpink;">div1</div>
+  </div>
+
+  <!-- Creating a flexbox 100px wide,then the other takes the entire(remaining space) -->
+  <div style="
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  ">
+  <div style="
+  background-color: lightblue;
+  width: 100px;
+  ">div2, a flexbox</div>
+  <div style="
+  background-color: lightpink;
+  flex: 1;
+  ">Flex taking the remaining space</div>
+  </div>
+
+
+  <div style="
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  ">
+  <div style="
+  background-color: lightblue;
+  flex: 0 0 100px;
+  ">div2, a flexbox</div>
+  <div style="
+  background-color: lightpink;
+  flex: 1;
+  ">Flex 1 taking remaining space</div>
+  <div style="
+  background-color: rgb(250, 16, 16);
+  flex: 2;
+  ">Flex 2 taking twice the remaining space</div>
+</div>
+
+<!-- While grid is fixed/rigid as specified in the columns section of the grid-template-columns,
+Flexbox is flexible and interchanging div has no impact.
+Flexbox is used depending on content, e.g when logged in and when logged out. You can use justify-content
+ to align them as per your need; either sart, center or end-->
+
+  <div style="
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  height: 70px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: grey;
+  justify-content: end;
+  ">
+  <div style="
+  background-color: lightblue;
+  width: 100px;
+  ">100px</div>
+  <div style="
+  background-color: lightpink;
+  width: 100px;
+  ">100px</div>
+  <div style="
+  background-color: rgb(250, 16, 16);
+  width: 100px;
+  ">100px</div>
+  </div>
+
+  <div style="
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  height: 70px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: grey;
+  justify-content: space-between;
+  ">
+  <div style="
+  background-color: lightblue;
+  width: 100px;
+  ">100px</div>
+  <div style="
+  background-color: lightpink;
+  width: 100px;
+  ">100px</div>
+  <div style="
+  background-color: rgb(250, 16, 16);
+  width: 100px;
+  ">100px</div>
+  </div>
+
+
+  <div style="
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  height: 70px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: grey;
+  justify-content: space-between;
+  align-items: start;
+  ">
+  <div style="
+  background-color: lightblue;
+  width: 100px;
+  ">100px</div>
+  <div style="
+  background-color: lightpink;
+  width: 100px;
+  ">100px</div>
+  <div style="
+  background-color: rgb(250, 16, 16);
+  width: 100px;
+  ">100px</div>
+  </div>
+
+  <div style="
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  height: 70px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: grey;
+  justify-content: space-between;
+  align-items: end;
+  ">
+  <div style="
+  background-color: lightblue;
+  width: 100px;
+  ">100px</div>
+  <div style="
+  background-color: lightpink;
+  width: 100px;
+  ">100px</div>
+  <div style="
+  background-color: rgb(250, 16, 16);
+  width: 100px;
+  ">100px</div>
+  </div>
+
+  <div style="
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  height: 70px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: grey;
+  justify-content: space-between;
+  align-items: center;
+  ">
+  <div style="
+  background-color: lightblue;
+  width: 100px;
+  ">100px</div>
+  <div style="
+  background-color: lightpink;
+  width: 100px;
+  ">100px</div>
+  <div style="
+  background-color: rgb(250, 16, 16);
+  width: 100px;
+  ">100px</div>
+  </div>
+
+
+
+
+
+
+</body>
+</html>

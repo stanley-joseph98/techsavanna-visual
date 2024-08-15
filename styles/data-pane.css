@@ -60,16 +60,27 @@ body{
     cursor: pointer;
 }
 
+#vizpage-display{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    justify-content: space-between;
+}
+
 .data-pane{
     background-color: lightgrey;
     color: black;
     font-weight: 10px;
-    position: fixed;
+    position: relative;
     left: 0px;
-    bottom: 0px;
-    top: 100px;
+    top: 0px;
+    bottom: 100px;
     width: 250px;
     display: flex;
+    
 
 }
 .datapane-text{
@@ -78,17 +89,20 @@ body{
     padding-left: 40px;
     font-family: arial;
     padding-right: 40px;
+    height: 435px;
 }
 .viz-canva{
     background-color:rgba(238, 238, 244, 0.947);
     color: rgb(16, 16, 16);
     font-weight: 10px;
-    position: fixed;
-    left: 250px;
-    bottom: 0px;
-    top: 100px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    bottom: 100px;
     width: 800px;
     display: flex;
+    height: 435px;
+    
 }
 .canva-text{
     text-align: center;
@@ -101,12 +115,14 @@ body{
     background-color: lightgrey;
     color: white;
     font-weight: 10px;
-    position: fixed;
+    position: relative;
     right: 0px;
-    left: 1050px;
-    bottom: 0px;
-    top: 100px;
+    left: 0px;
+    top: 0px;
+    bottom: 100px;
     display: flex;
+    height: 435px;
+    
 }
 .chartarea-text{
     text-align: center;

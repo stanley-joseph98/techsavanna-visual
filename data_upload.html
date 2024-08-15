@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5c5fe8666e.js" crossorigin="anonymous"></script>
+    <title>Techsavanna Visual - Upload your data</title>
+    <link rel="stylesheet" href="./styles/index-style.css">
+    <link rel="stylesheet" href="./styles/data-upload.css">
+</head>
+<body>
+    <div>
+        <input type="file" id="file-upload" />
+        <button id="upload-btn">Upload File</button>
+        <div id="data-table"></div>
+    </div>
+
+    <div class="container">
+        <div class="pagination">
+            <button class="button1" onclick="backButton()"> <i class="fa-solid fa-arrow-right"></i>Previous Page</button>
+            <ul>
+                <li class="link" value="1" onclick="activeLink()">1</li>
+                <a href="./index.html"><li class="link active" value="2" onclick="activeLink()">2</li></a>
+                <a href="./dashboard.html"><li class="link" value="3" onclick="activeLink()">3</li></a>
+            </ul>
+            <button class="button2" onclick="nextButton()">Next Page<i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/pages.js"></script>
+
+    <footer>
+        
+        <p>Find IPPF on social media:</p> <i class="fa-brands fa-x-twitter fa-3.5x"></i>
+        <i class="fa-brands fa-facebook fa-3.5x"></i>
+        <i class="fa-brands fa-square-instagram fa-3.5x"></i>
+        <i class="fa-brands fa-tiktok fa-3.5x"></i>
+        <i class="fa-brands fa-whatsapp fa-3.5x"></i>
+        <p>&copy; 2024. A sample footer.</p>
+    </footer>
+</body>
+</html>
