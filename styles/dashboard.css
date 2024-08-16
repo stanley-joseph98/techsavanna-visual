@@ -1,37 +1,18 @@
-body {
-    background-color: #e7e4e4;
-    margin: 0;
-    padding: 0;
-    height: 100vh; /* set body height to 100% of viewport height */
-}
-
-.main-content {
-    height: calc(100vh - 130px); /* set main content height to 100% of viewport height minus footer height */
-    overflow-y: auto; /* add scrollbar if content exceeds height */
-}
-
-
 *{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* set body height to 100% of viewport height */
+}
 
-
-#file{
-    width: 200px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    background-color: rgb(240, 239, 245);
-    margin-left: 500px;
-    margin-top: 20px;
-    border-radius: 10px;
-    border:dashed;
-    padding-top: 27px;
-    padding-left: 13px;
-    
+.main-content {
+    height: calc(100vh - 100px); /* set main content height to 100% of viewport height minus footer height */
+    overflow-y: auto; /* add scrollbar if content exceeds height */
 }
 
 .container{
@@ -42,7 +23,7 @@ body {
     height: 20vh;
     /* background: linear-gradient(45deg, rgb(250, 8, 8), rgb(247, 5, 5)); */
     width: 100%;
-    margin-top:54.5vh;
+    margin-top: 63vh;
 }
 
 .pagination{
@@ -116,47 +97,13 @@ ul li.active{
 
 }
 
-
-
-table{
-    border-collapse: collapse;
-    width: 100%;
-    margin-top: 40px;
-}
-
-table td, 
-table th{
-    border: 1px solid black;
-    padding: 0.5em;
-
-}
-
-/*Styliing each alternating row*/
-table tr:nth-child(2n){
-    background-color: white;
-
-}
-
-
-table tr:hover{
-    background-color: #ddd;
-}
-
-table th {
-    padding-top: 1em;
-    text-align: left;
-    background-color: dodgerblue;
-    color: white;
-}
-
 footer {
     background-color: #1d0065;
     color: white;
     font-family: verdana;
     text-align: center;
-    height: 130px;
-    padding-top: 3%;
-    padding-bottom: 5%;
-    margin-bottom: 0;
+    height: 100px;
+    padding-top: 5%;
+    padding-bottom: 10px;
 }
 

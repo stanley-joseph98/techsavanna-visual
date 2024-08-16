@@ -28,7 +28,7 @@
     <div id="vizpage-display">
         <div class="data-pane">
             <div >
-                <h6 class="datapane-text">Once you upload your data the fields will show up here</h6>
+                <p class="datapane-text">Once you upload your data the fields will show up here</p>
             </div>
         </div>
 
@@ -56,6 +56,24 @@
 
     <script src="./scripts/index.js"></script>
     <script src="./scripts/pages.js"></script>
+    <script>
+        // Retrieve the stored CSV data from local storage
+        var csvData = localStorage.getItem('csvData');
+
+        if (csvData) {
+        // Parse the CSV data and extract the fields
+        var fields = csvData.split('\n')[0].split(',');
+        var dataPaneHtml = '';
+
+        // Generate the HTML for the data pane
+        fields.forEach(function(field) {
+            dataPaneHtml += '<p>' + field + '</p>';
+        });
+
+        // Display the fields in the data pane
+        document.querySelector('.data-pane').innerHTML = dataPaneHtml;
+        }
+    </script>
     <footer>
         
         <p>Find IPPF on social media:</p> <br><i class="fa-brands fa-x-twitter fa-3.5x"></i>

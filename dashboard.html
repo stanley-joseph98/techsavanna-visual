@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <script src="https://kit.fontawesome.com/5c5fe8666e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./styles/index-style.css">
-    <link rel="stylesheet" href="./styles/data-pane.css">
+    <link rel="stylesheet" href="./styles/dashboard.css">
+    
 </head>
 <body>
-
-
-    <div class="container">
-        <div class="pagination">
-            <button class="button1" onclick="backButton()"> <i class="fa-solid fa-arrow-right"></i>Previous Page</button>
-            <ul>
-                <a href="./data_upload.html"><li class="link" value="1" onclick="activeLink()">1</li></a>
-                <a href="./index.html"><li class="link active" value="2" onclick="activeLink()">2</li></a>
-                <li class="link" value="3" onclick="activeLink()">3</li>
-            </ul>
-            <button class="button2" onclick="nextButton()">Next Page<i class="fa-solid fa-arrow-right"></i></button>
+    <div class="main-content">
+        <div class="container">
+            <div class="pagination">
+                <button class="button1" onclick="backButton()"> <i class="fa-solid fa-arrow-right"></i>Previous Page</button>
+                <ul>
+                    <a href="./data_upload.html"><li class="link" value="1" onclick="activeLink()">1</li></a>
+                    <a href="./index.html"><li class="link" value="2" onclick="activeLink()">2</li></a>
+                    <li class="link active" value="3" onclick="activeLink()">3</li>
+                </ul>
+                <button class="button2" onclick="nextButton()"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
         </div>
     </div>
   
@@ -27,6 +27,7 @@
 
     <script src="./scripts/index.js"></script>
     <script src="./scripts/pages.js"></script>
+    <script src="./scripts/csvdata-upload.js"></script>
     <footer style=
            "
            clear: both;

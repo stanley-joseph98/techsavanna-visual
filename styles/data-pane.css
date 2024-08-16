@@ -80,17 +80,22 @@ body{
     bottom: 100px;
     width: 250px;
     display: flex;
+    height: 500px;
     
 
 }
-.datapane-text{
+.data-pane::before {
+    content: "Once you upload your data the fields will show up here";
+    color: #ccc; /* gray color to indicate it's a placeholder */
+  }
+/* .datapane-text{
     text-align: center;
     padding-top: 170px;
     padding-left: 40px;
     font-family: arial;
     padding-right: 40px;
-    height: 435px;
-}
+    
+} */
 .viz-canva{
     background-color:rgba(238, 238, 244, 0.947);
     color: rgb(16, 16, 16);
@@ -99,9 +104,9 @@ body{
     left: 0px;
     top: 0px;
     bottom: 100px;
-    width: 800px;
+    width: 1200px;
     display: flex;
-    height: 435px;
+    height: 500px;
     
 }
 .canva-text{
@@ -121,7 +126,7 @@ body{
     top: 0px;
     bottom: 100px;
     display: flex;
-    height: 435px;
+    height: 500px;
     
 }
 .chartarea-text{

@@ -1,4 +1,4 @@
-const fileUpload = document.getElementById('file-upload');
+/*const fileUpload = document.getElementById('file-upload');
 const uploadBtn = document.getElementById('upload-btn');
 const dataTable = document.getElementById('data-table');
 
@@ -29,4 +29,4 @@ function displayData(data, headers) {
     `;
     dataTable.innerHTML = tableHtml;
   }
-  
+  */
