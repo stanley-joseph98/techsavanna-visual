@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Header section development</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./header.css"/>
+  <script src="https://kit.fontawesome.com/5c5fe8666e.js" crossorigin="anonymous"></script>
+
+</head>
+<body style="height: 3000px;">
+  <div class="header-div">
+    <div class="first-section">
+      <img class="hamburger-menu" src="hamburger-menu.svg">
+      <img class="youtube-logo" src="./youtube-logo.svg">
+    </div>
+    <div class="second-section">
+      <input class="search-bar" type="text" placeholder="Search Youtube">
+      <button class="search-button">
+        <img class="search-icon" src="search.svg">
+        <div class="tooltip">Search</div>
+      </button>
+      <button class="voice-button">
+        <img class="voice-icon" src="voice-search-icon.svg">
+        <div class="tooltip">Search with your voice</div>
+      </button>
+    </div>
+    <div class="third-section">
+      <img class="uploads-icon" src="upload.svg">
+      <img class="youtube-apps-icon" src="youtube-apps.svg">
+      <!-- To create a counter in the notification bar, wrap the image icon in a div, 
+      then set the position of the new div to relative. [See CSS.] -->
+      <div class="notifications-icon-container">
+        <img class="notifications-icon" src="notifications.svg">
+        <div class="notifications-count">3</div>
+      </div>
+      <img class="current-user-icon" src="my-channel.jpeg">
+      
+    </div>
+  </div>
+
+  <div class="sidebar">
+    
+    <div class="sidebar-link">
+      <i id="home-icon" class="fa fa-home" aria-hidden="true"></i>
+      <div>Home</div>
+    </div>
+    
+    
+    <div class="sidebar-link"></div>
+    <div class="sidebar-link"></div>
+    <div class="sidebar-link"></div>
+    <div class="sidebar-link"></div>
+    <div class="sidebar-link"></div>
+
+  </div>
+  
+</body>
+</html>

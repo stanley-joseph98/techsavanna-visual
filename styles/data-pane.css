@@ -117,7 +117,7 @@ body{
 }
 
 .chart-area{
-    background-color: lightgrey;
+    background-color: rgb(16, 211, 61);
     color: white;
     font-weight: 10px;
     position: relative;

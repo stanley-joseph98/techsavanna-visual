@@ -1,0 +1,215 @@
+body{
+    font-family: Roboto, Arial;
+    margin-right: 0;
+    padding-top: 80px; /*Header should not cover our contents*/
+    height: 3000px;
+    padding-left: 80px;
+  }
+  
+  .header-div{
+    height: 55px;
+    justify-content: space-between; /*Distribute the inner divs evenly along the heaer div*/
+    display: flex;
+    flex-direction: row;
+    position:fixed; /*The eader will stick at the top of the page*/
+    top: 0; 
+    left: 0; 
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar{
+    background-color: green;
+    color: white;
+    font-weight: 10px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    top: 50px;
+    width: 72px;
+  }
+  
+  .first-section{
+    /* background-color: aqua; */
+    /* width: 150px;  This div will have this fixed width */
+    display: flex; /*To enable central alignment*/
+    align-items: center;/*All elements will be aligned in the center*/
+  }
+  .second-section{
+    /* background-color: burlywood; */
+    flex: 1;  /*This property allows this div to take up the remaining space after first and third section took their respective fixed lengths*/
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 500px;/*Even if flex occurs, let the size of this section not go beyond 300px on screen expansion*/
+  }
+  
+  .third-section{
+    /* background-color: lightpink; */
+    /*width: 200px; commented out since we now have flex and not block This div will have this fixed width*/
+    margin-left: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+  
+  .hamburger-menu{
+    height: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .youtube-logo{
+    height: 20px;
+  }
+  
+  .search-bar{
+    flex: 1;
+    height: 32px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+    border-color: rgb(192, 192, 192);
+    padding-left: 16px; /*Space before someone starts searching*/
+  }
+  .search-bar:active{
+    border-color: white;
+    border-width: 1px;
+  }
+  
+  .search-icon{
+    height: 28px;
+  }
+  
+  .search-bar::placeholder{
+    font-family: Roboto, Arial;
+    font-size: 16px;
+  }
+  
+  .search-button{
+    height: 35px;
+    width: 60px;
+    background-color: rgb(242, 237, 237);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192,192,192);
+    margin-left: -1px; /*Pushes an item into the other one in the left so as to appear as if they share the same border*/
+  }
+  
+  .search-button, .voice-button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search-button .tooltip, 
+  .voice-button .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: 20px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity o.15s;
+    pointer-events: none;
+    white-space: nowrap; /*Prevents the voice search tooltip from wrapping*/
+  }
+  
+  .search-button:hover .tooltip, 
+  .voice-button:hover .tooltip{
+    opacity: 1;
+  }
+  
+  .voice-button{
+    height: 37px;
+    width: 40px;
+    border-radius: 20px;
+    margin-left: 10px;
+    border-width: 1px;
+    border:none; /*Gets rid of the border*/
+  }
+  
+  .voice-icon{
+    height: 24px;
+  }
+  
+  .uploads-icon{
+    height: 24px;
+  }
+  
+  .youtube-apps-icon{
+    height: 24px;
+  }
+  
+  .notifications-icon{
+    height: 24px;
+  }
+  /* SEE HTML FOR FURTHER INSTRUCTIONS ON POSITION RELATVE AND ABSOLUTE */
+  
+  .notifications-icon-container{
+    position: relative;
+  }
+  .notifications-count{
+    position: absolute;
+    top: -2px; /*Take the element beyond top*/
+    right: -2px;  /*Take the element beyond right*/
+    background-color: rgba(158, 10, 10, 0.811);
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+  }
+  
+  
+  .current-user-icon{
+    height: 24px;
+  }
+  
+  .sidebar-link{
+    
+    height: 75px;
+    margin-bottom: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  
+  }
+  .sidebar-link:hover{
+    background-color: lightgrey;
+  }
+  
+  .sidebar-link img{
+    height: 24px;
+  
+  }
+  .sidebar-link div{
+    font-family: Roboto, Arial;
+    font-size: 15px;
+    color: black;
+  }
+  #home-icon{
+    color: black;
+    margin-bottom: 6px;
+    font-size: 20px;
+  }

@@ -96,3 +96,28 @@ footer {
     padding-top: 5%;
     padding-bottom: 10px;
 }
+
+.rightbar-link{
+    
+    
+    margin-bottom: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+  
+  }
+  .rightbar-link:hover{
+    background-color: lightgrey;
+  }
+  
+  .rightbar-link img{
+    height: 24px;
+  
+  }
+  .rightbar-link div{
+    font-family: Roboto, Arial;
+    font-size: 15px;
+    
+  }

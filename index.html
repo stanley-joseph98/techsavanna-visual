@@ -19,14 +19,15 @@
         <i class="fa-solid fa-house"></i>
         <nav class="topdiv">
             
-            <a href="./data_upload.html"><button class="topmenu">Upload Data</button></a>
+            <a href="./data_upload.html"><button class="topmenu">Add Data to the Schema</button></a>
             <a href="./dashboard.html"><button class="topmenu">My Visualization Dashboard</button></a>
-            <a href="#insights"><button class="topmenu">AI Assitance</button></a>
+            <!-- <a href="#insights"><button class="topmenu">AI Assitance</button></a> -->
             <a href="https://secure.ippf.org/a/donate" target="_blank" title="This link will take you to a separate website in a new tab"><button class="donatemenu">To Donate</button></a>
         </nav>
     </section>
     <div id="vizpage-display">
         <div class="data-pane">
+            
             <div >
                 <p class="datapane-text">Once you upload your data the fields will show up here</p>
             </div>
@@ -37,7 +38,50 @@
         </div>
 
         <div class="chart-area">
-            <h5 class="chartarea-text">Click on your preferred chart. You can also hold onto and drag it into the empty canva in the immediate left</h5>
+            <!-- <h5 class="chartarea-text">Click on your preferred chart. You can also hold onto and drag it into the empty canva in the immediate left</h5> -->
+            <div class="rightbar-link">
+                <div><img src="./images_icons/viz_bar.svg"></div>
+                <div><img src="./images_icons/grouped_bar.png"></div>
+                <div><img src="./images_icons/viz_bar-stacking.svg"></div>
+            </div>
+            <div class="rightbar-link">
+                <div><img src="./images_icons/viz_column.svg" ></div>
+                <div><img src="./images_icons/grouped_column.png"></div>
+                <div><img src="./images_icons/viz_column-stacking.svg"></div>
+            </div>
+            <div class="rightbar-link">
+                <div><img src="./images_icons/pie-chart-svgrepo-com.svg"></div>
+                <div><img src="./images_icons/viz_donut.svg"></div>
+                <div><img src="./images_icons/3d-pie.jpg"></div>
+            </div>
+            <div class="rightbar-link">
+                <div><img src="./images_icons/viz_line.svg"></div>
+                <div><img src="./images_icons/viz_area.svg"></div>
+                <div><img src="./images_icons/viz_area-stacking.svg"></div>
+            </div>
+            <div class="rightbar-link">
+                <div><img src="./images_icons/viz_treemap.svg"></div>
+                <div><img src="./images_icons/viz_table.svg"></div>
+            </div>
+            <div class="rightbar-link">
+                <div><img src="./images_icons/viz_bubble.svg"></div>
+                <div><img src="./images_icons/scatter-plot-svgrepo-com.svg"></div>
+            </div>
+            <div class="rightbar-link">
+                <div><img src="./images_icons/card-holder-svgrepo-com.svg"></div>
+                <div><img src="./images_icons/gauge-svgrepo-com.svg"></div>
+                <div><img src="./images_icons/percentage-percent-svgrepo-com.svg"></div>
+            </div>
+            <div class="rightbar-link">
+                <div><img src="./images_icons/viz_map.svg" ></div>
+                <div><img src="./images_icons/choropleth.png" ></div>
+                <div><img src="./images_icons/arial-maps.png"></div>
+            </div>
+            <div class="rightbar-link">
+                <div><img src="./images_icons/funnel-svgrepo-com.svg"></div>
+                <div><img src="./images_icons/combo-grouped-column-line.png"></div>
+                <div><img src="./images_icons/graph-boxplot-svgrepo-com.svg"></div>
+            </div>
         </div>
     </div>
 
@@ -56,24 +100,7 @@
 
     <script src="./scripts/index.js"></script>
     <script src="./scripts/pages.js"></script>
-    <script>
-        // Retrieve the stored CSV data from local storage
-        var csvData = localStorage.getItem('csvData');
-
-        if (csvData) {
-        // Parse the CSV data and extract the fields
-        var fields = csvData.split('\n')[0].split(',');
-        var dataPaneHtml = '';
-
-        // Generate the HTML for the data pane
-        fields.forEach(function(field) {
-            dataPaneHtml += '<p>' + field + '</p>';
-        });
-
-        // Display the fields in the data pane
-        document.querySelector('.data-pane').innerHTML = dataPaneHtml;
-        }
-    </script>
+    <script src="./scripts/csvdata-upload.js"></script>
     <footer>
         
         <p>Find IPPF on social media:</p> <br><i class="fa-brands fa-x-twitter fa-3.5x"></i>

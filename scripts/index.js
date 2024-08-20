@@ -1,32 +1,21 @@
-/*const fileUpload = document.getElementById('file-upload');
-const uploadBtn = document.getElementById('upload-btn');
-const dataTable = document.getElementById('data-table');
+// // Retrieve the stored CSV data from local storage
+// var csvData = localStorage.getItem('csvData');
 
-uploadBtn.addEventListener('click', () => {
-  const file = fileUpload.files[0];
-  Papa.parse(file, {
-    header: true,
-    complete: function(results) {
-      const data = results.data;
-      const headers = results.meta.fields;
-      displayData(data, headers);
-    }
-  });
-});
+// if (csvData) {
+//   // Parse the CSV data and extract the fields
+//   var fields = csvData.split('\n')[0].split(',');
+//   var dataPaneHtml = '';
 
-function displayData(data, headers) {
-    const tableHtml = `
-      <table>
-        <thead>
-          <tr>${headers.map(header => `<th>${header}</th>`).join('')}</tr>
-        </thead>
-        <tbody>
-          ${data.map(row => `
-            <tr>${row.map(cell => `<td>${cell}</td>`).join('')}</tr>
-          `).join('')}
-        </tbody>
-      </table>
-    `;
-    dataTable.innerHTML = tableHtml;
-  }
-  */
+//   // Generate the HTML for the data pane with checkboxes
+//   fields.forEach(function(field, index) {
+//     dataPaneHtml += `
+//       <div>
+//         <input type="checkbox" id="field-${index}" value="${field}">
+//         <label for="field-${index}">${field}</label>
+//       </div>
+//     `;
+//   });
+
+//   // Display the fields in the data pane
+//   document.querySelector('.data-pane').innerHTML = dataPaneHtml;
+// }
