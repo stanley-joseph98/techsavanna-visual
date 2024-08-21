@@ -97,27 +97,135 @@ footer {
     padding-bottom: 10px;
 }
 
-.rightbar-link{
+.chart-area{
     
-    
-    margin-bottom: 1px;
+    color: white;
+    font-weight: 10px;
+    position: relative;
+    right: 0px;
     display: flex;
+    bottom: 100px;
+    height: 500px;
+    top: 0;
+    flex-direction: column;
+    width: 350px;
+}
+.chart-area img{
+    height: 40px;
+    color: linear-gradient(45deg, rgb(250, 8, 8), rgb(247, 5, 5));;
+}
+
+
+
+.bargraphs-link{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
     justify-content: space-between;
     align-items: center;
+}
+
+.columncharts-link{
+    display: flex;
     flex-direction: row;
-    cursor: pointer;
-  
-  }
-  .rightbar-link:hover{
-    background-color: lightgrey;
-  }
-  
-  .rightbar-link img{
-    height: 24px;
-  
-  }
-  .rightbar-link div{
-    font-family: Roboto, Arial;
-    font-size: 15px;
-    
-  }
+    margin-top: 5px;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.piecharts-link{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.areacharts-link{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.treemaps-link{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bubbleplots-link{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kpi-link{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mapcharts-link{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.combocharts-link{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+ 

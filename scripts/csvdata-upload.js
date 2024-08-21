@@ -31,30 +31,26 @@
         reader.onload = function(e){
             toTable(e.target.result);
             var csvData = e.target.result;
-            localStorage.setItem('csvData',csvData);
-            
+            localStorage.setItem('csvData', csvData);
+        
             // Update the index.html page dynamically
-            var indexPage = document.getElementsByClassName('data-pane');
-            indexPage.innerHTML = '';
-            var dataPaneHtml = '';
-            // Generate the HTML for the data pane with checkboxes
             var fields = csvData.split('\n')[0].split(',');
+            var dataPaneHtml = '<ul>'; // Add a <ul> element
             fields.forEach(function(field, index) {
-                dataPanel += `
-                <div>
-                    <input type = "checkbox" id="field-${index}" value = "${field}">
+                
+                dataPaneHtml += `
+                <li>
+                    <input type="checkbox" id="field-${index}" value="${field}">
                     <label for="field-${index}">${field}</label>
-                /div>
+                </li>
                 `;
             });
-            indexPage.innerHTML = dataPaneHtml;
-            
-
+            dataPaneHtml += '</ul>'; // Close the <ul> element
+        
+            localStorage.setItem('dataPaneHtml', dataPaneHtml);
         };
 
         reader.readAsText(file);
-
-        
     }
 
     function displayDataOnDashboard() {
@@ -63,7 +59,7 @@
             toTable(csvData);
         }
     }
-    
+
     displayDataOnDashboard();
 
     function toTable(text){
@@ -120,7 +116,5 @@
             table.append(rtr);
 
         });
-        
-
     }
 })();

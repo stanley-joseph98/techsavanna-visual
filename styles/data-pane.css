@@ -81,8 +81,12 @@ body{
     width: 250px;
     display: flex;
     height: 500px;
+
     
 
+}
+.data-pane div {
+    display: block; /* Ensure this is set to display the checkboxes */
 }
 .data-pane::before {
     content: "Once you upload your data the fields will show up here";
@@ -116,19 +120,7 @@ body{
     font-family: arial;
 }
 
-.chart-area{
-    background-color: rgb(16, 211, 61);
-    color: white;
-    font-weight: 10px;
-    position: relative;
-    right: 0px;
-    left: 0px;
-    top: 0px;
-    bottom: 100px;
-    display: flex;
-    height: 500px;
-    
-}
+
 .chartarea-text{
     text-align: center;
     padding-top: 0px;
