@@ -70,7 +70,7 @@ body{
     justify-content: space-between;
 }
 
-.data-pane{
+.fields-pane{
     background-color: lightgrey;
     color: black;
     font-weight: 10px;
@@ -81,17 +81,26 @@ body{
     width: 250px;
     display: flex;
     height: 500px;
-
-    
+    flex-direction: column;
 
 }
-.data-pane div {
-    display: block; /* Ensure this is set to display the checkboxes */
+.data-pane{
+    margin-top: 0px;
+    height: 338px;
+    left: 5px;
 }
-.data-pane::before {
+.field-type{
+    margin-bottom: 0;
+    left: 5px;
+}
+.field-type input, h5{
+    left: 5px;
+}
+
+/* .fields-pane::before {
     content: "Once you upload your data the fields will show up here";
-    color: #ccc; /* gray color to indicate it's a placeholder */
-  }
+    color: #ccc; /* gray color to indicate it's a placeholder 
+  } */
 /* .datapane-text{
     text-align: center;
     padding-top: 170px;
