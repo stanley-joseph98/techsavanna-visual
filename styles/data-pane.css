@@ -70,25 +70,36 @@ body{
     justify-content: space-between;
 }
 
-.fields-pane{
-    background-color: lightgrey;
-    color: black;
-    font-weight: 10px;
-    position: relative;
-    left: 0px;
-    top: 0px;
-    bottom: 100px;
-    width: 250px;
+.fields-pane {
+    height: 500px; /* fixed height */
+    overflow-y: auto; /* add vertical scrollbar */
+    padding: 10px; /* add some padding */
+    border: 1px solid #ddd; /* add a border */
+  }
+  
+  .data-pane {
+    padding: 10px; /* add some padding */
+  }
+  
+  .data-pane ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .data-pane li {
     display: flex;
-    height: 500px;
-    flex-direction: column;
-
-}
-.data-pane{
-    margin-top: 0px;
-    height: 338px;
-    left: 5px;
-}
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .data-pane input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .data-pane label {
+    flex: 1; /* take up the remaining space */
+  }
 .field-type{
     margin-bottom: 0;
     left: 5px;
